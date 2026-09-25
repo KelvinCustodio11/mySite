@@ -1,8 +1,12 @@
+# Dependências
 /node_modules/
-/dist/
-/.git/
+
+# Artefatos de build (gerados por `npm run build`)
 /app/css/
+/dist/
+
+# Logs e temporários
+*.log
 /**/_backstage
-/**/package-lock.json
 /**/Thumbs.db
 /**/*.DS_Store

@@ -1,31 +1,29 @@
 {
-  "name": "optimizedhtml",
-  "version": "4.0.0",
-  "description": "OptimizedHTML 4 - Start HTML Template",
-  "main": "index.js",
+  "name": "mumbrass-dev",
+  "version": "2.0.0",
+  "description": "Mumbrass template - build moderno (sass + pug + browser-sync)",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css": "sass --load-path=sass --silence-deprecation=import,color-functions,global-builtin,if-function,slash-div sass/main.sass app/css/main.css --no-source-map && postcss app/css/main.css --use autoprefixer -o app/css/main.min.css --no-map && cleancss app/css/main.min.css -o app/css/main.min.css",
+    "html": "pug --pretty pug/index.pug -o app/",
+    "build": "npm run css && npm run html",
+    "watch:css": "chokidar 'sass/**/*.sass' -c \"npm run css\" -d 200",
+    "watch:html": "pug --watch --pretty pug/index.pug -o app/",
+    "serve": "browser-sync start --server app --no-open --files 'app/**/*.html,app/css/*.css,app/js/*.js'",
+    "dev": "npm run build && concurrently -k -n css,html,web -c yellow,cyan,green \"npm:watch:css\" \"npm:watch:html\" \"npm:serve\"",
+    "start": "npm run dev"
   },
-  "author": "WebDesign Master",
-  "license": "ISC",
+  "browserslist": [
+    "last 15 versions"
+  ],
   "devDependencies": {
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-concat": "^2.6.1",
-    "gulp-notify": "^3.2.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.3.0",
-    "gulp-rsync": "0.0.8",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "pug": "^2.0.3",
-    "pug-bem": "^1.0.1"
-  },
-  "dependencies": {
-    "node-bourbon": "^4.2.8",
-    "pug-bemify": "^1.0.4"
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "chokidar-cli": "^3.0.0",
+    "clean-css-cli": "^5.6.0",
+    "concurrently": "^9.1.0",
+    "postcss-cli": "^11.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.80.0"
   }
 }
