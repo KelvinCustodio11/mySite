@@ -14,15 +14,84 @@ O visual e o HTML gerados são **idênticos** ao original (verificado por diff: 
 |---|---|
 | `npm install` | instala as dependências (uma vez) |
 | `npm run dev` | **modo desenvolvimento**: build + watch + servidor com live-reload |
-| `npm run build` | gera `app/css/*` e `app/index.html` uma vez |
+| `npm run build` | gera `app/index.html` (pt-BR) + `app/en.html` (en) + `app/css/*` |
 | `npm run css` | compila só o Sass → `main.css` + `main.min.css` |
-| `npm run html` | compila só o Pug → `index.html` |
+| `npm run html` | compila os dois HTMLs (pt-BR e en) |
+| `npm run html:pt` | compila só o `app/index.html` |
+| `npm run html:en` | compila só o `app/en.html` |
 | `npm run serve` | servidor em `http://localhost:3000` (sem watch) |
 
 No modo `dev`, **salvar qualquer arquivo já atualiza o navegador**:
 
 - editou `sass/**/*.sass` → recompila o CSS (cadeia inteira: sass → autoprefixer → minify)
-- editou `pug/**/*.pug` → recompila o HTML
+- editou `pug/**/*.pug` → recompila os dois HTMLs
+- editou `pug/locales/*.json` → recompila os dois HTMLs
+
+---
+
+## Idiomas
+
+O site é **bilingue**, com **pt-BR como padrão**:
+
+| | Arquivo | `lang` | Gerado por |
+|---|---|---|---|
+| **Padrão** | `app/index.html` | `pt-BR` | `pug/locales/pt-BR.json` |
+| Secundário | `app/en.html` | `en` | `pug/locales/en.json` |
+
+### Como funciona
+
+Todo texto visível do site mora num **dicionário JSON**. Os templates `.pug` não têm
+texto fixo — só referências:
+
+```pug
+h2.alx-heading__title= t.about.title        //- em vez de "About Me"
+a(href="#page1")= t.menu.home               //- em vez de "Home"
+```
+
+O `pug-cli` recebe o JSON via `-O` e o injeta como a variável `t`:
+
+```bash
+pug -O pug/locales/pt-BR.json pug/index.pug -o app/   # → app/index.html
+pug -O pug/locales/en.json     pug/en.pug     -o app/  # → app/en.html
+```
+
+Os dois entry points (`index.pug` e `en.pug`) têm 2 linhas cada e incluem o mesmo
+`_page.pug` — **zero duplicação de layout**.
+
+### Para editar um texto
+
+Abra `pug/locales/pt-BR.json` (e o `en.json` correspondente):
+
+```json
+{
+  "t": {
+    "about": {
+      "title": "Sobre Mim",
+      "description": "Tenho muita experiência..."
+    }
+  }
+}
+```
+
+Salvou → o watch recompila os dois HTMLs e o navegador recarrega.
+
+> **Importante:** o objeto está sob a chave `t`. Isso dá namespace e evita conflito
+> com as opções internas do Pug. Não remova esse wrapper.
+
+### Para adicionar um novo texto
+
+1. Adicione a chave nos **dois** JSONs (`pt-BR.json` e `en.json`)
+2. Use no `.pug`: `= t.caminho.da.chave`
+3. Salve
+
+### O seletor de idioma
+
+Fica no canto inferior esquerdo (e no sidebar). `PT` é o idioma atual, `EN` leva
+para o outro documento.
+
+`app/js/lang.js` preserva a seção ativa: o pagePiling guarda a posição na hash da URL
+(`#page3`), e ao trocar de idioma o link navega para `en.html#page3` — então você
+**não perde a posição de scroll**.
 
 ---
 
@@ -50,10 +119,14 @@ sass/elements/*.sass    header, sidebar, skills, portfolio, testimonials...
 sass/components/*.sass  animações
 ```
 
-### Conteúdo do site → `pug/`
+### Conteúdo do site → `pug/` + `pug/locales/`
 
 ```
-pug/index.pug           entrada — só monta os includes
+pug/index.pug           entrada pt-BR (2 linhas → inclui _page.pug)
+pug/en.pug              entrada en    (2 linhas → inclui _page.pug)
+pug/_page.pug           layout completo, compartilhado pelos dois
+pug/locales/pt-BR.json  TODOS os textos em português
+pug/locales/en.json     TODOS os textos em inglês
 pug/html/_head.pug      meta, fontes, CSS
 pug/html/_header.pug    preloader + cabeçalho
 pug/html/_menu.pug      menu (editou aqui, mudou em todos os lugares)
@@ -61,10 +134,12 @@ pug/html/_footer.pug
 pug/html/_scripts.pug   bibliotecas JS
 pug/sections/_N-*.pug   as 9 seções da página
 pug/includes/*.pug      sidebar, logo, social, elementos fixos
+pug/portfolio/*.pug     filtros e itens do portfólio
 ```
 
-> **Regra:** edite `.sass` e `.pug`. Nunca edite `app/index.html` nem `app/css/*.css` —
-> são gerados e serão sobrescritos no próximo build.
+> **Regra:** edite `.sass` para estilo, `.pug` para estrutura, `.json` para textos.
+> Nunca edite `app/index.html`, `app/en.html` nem `app/css/*.css` — são gerados e
+> serão sobrescritos no próximo build.
 
 ---
 
@@ -72,17 +147,20 @@ pug/includes/*.pug      sidebar, logo, social, elementos fixos
 
 ```
 app/          ← o site pronto (o que vai pro servidor)
-  index.html      gerado por pug
+  index.html      gerado por pug (pt-BR, padrão)
+  en.html         gerado por pug (inglês)
   css/            gerado por sass  (main.css + main.min.css)
-  js/             common.js (fonte) + main.min.js (o que carrega)
+  js/             common.js (fonte), main.min.js (o que carrega), lang.js (idioma)
   libs/           bibliotecas JS/CSS usadas pelo site
   images/, img/, fonts/
   mail.php        handler do formulário (requer PHP)
   ht.access       ← renomear para .htaccess ao publicar
 
-sass/         ← fonte do CSS
-pug/          ← fonte do HTML
-package.json  ← scripts do build
+sass/           ← fonte do CSS
+pug/            ← fonte do HTML
+  locales/       ← dicionários de idioma (pt-BR.json, en.json)
+package.json    ← scripts do build
+README.md
 ```
 
 `app/` é autossuficiente — pode copiar pra hospedagem inteiro.
@@ -95,6 +173,9 @@ package.json  ← scripts do build
 2. Renomear `app/ht.access` → `app/.htaccess`
 3. Trocar o email em `app/mail.php` (`$admin_email = "example@yourdomain.com"`)
 4. Subir a pasta `app/` (o servidor precisa de PHP pro formulário funcionar)
+
+O idioma padrão é o `index.html` (pt-BR) — é ele que o servidor entrega na raiz e
+que os buscadores indexam primeiro.
 
 ---
 

@@ -2,12 +2,12 @@
 section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-image="images/bg12.jpg")
 	.alx-vertical-heading
 		i.fa.fa-bell-o
-		| Contact with me
+		= t.contact.vertical
 	.container
 		.row.align-items-center
 			.col-lg-5
 				.alx-heading
-					h2.alx-heading__title Say Hello
+					h2.alx-heading__title= t.contact.title
 					.alx-heading__zigzag
 						svg(x='0px', y='0px', viewBox='0 0 100 19.5')
 							g
@@ -21,44 +21,45 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 						span
 							i.fa.fa-phone
 					.alx-icon__text
-						h5 Call Me Anytime
-						p +754-554-54-34
+						h5= t.contact.phone
+						p= t.contact.phoneValue
 				.alx-icon
 					.alx-icon__icon
 						span
 							i.fa.fa-envelope
 					.alx-icon__text
-						h5 Email me
-						a(href="mailto:brainiaktheme@gmail.com") Office@domian.com
+						h5= t.contact.email
+						a(href="mailto:" + t.contact.emailValue)= t.contact.emailValue
 				.alx-icon
 					.alx-icon__icon
 						span
 							i.fa.fa-home
 					.alx-icon__text
-						h5 Address
-						p 445 Mount Eden Road, Mount
+						h5= t.contact.address
+						p= t.contact.addressValue
 			.col-lg-8
 				
 				form.alx-contact-form(action="#")
 					.row
 						.col-lg-6
 							.alx-input-group
-								input(name="name" type="text" required placeholder="Your Name *")
+								input(name="name" type="text" required placeholder=t.contact.form.name)
 								i.fa.fa-user-o
 						.col-lg-6
 							.alx-input-group
-								input(name="name" type="email" required placeholder="Your Email *")
+								input(name="email" type="email" required placeholder=t.contact.form.email)
 								i.fa.fa-at
 						.col-lg-12
 							.alx-input-group
-								textarea(name="name" rows="6" required placeholder="Message *")
+								textarea(name="message" rows="6" required placeholder=t.contact.form.message)
 								i.fa.fa-commenting-o
 							.alx-success-msg.hide
-								p Message has been send successfully
+								p= t.contact.form.success
 
-							input(type="submit" class="alx-btn" value="Send a Massage")
+							input(type="submit" class="alx-btn" value=t.contact.form.submit)
 
 					
 					
 			
 				
+

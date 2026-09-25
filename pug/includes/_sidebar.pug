@@ -2,17 +2,15 @@ aside.alx-aside-sidebar.alx-aside-sidebar__dark.alx-bg-img#alx-sidebar(data-imag
 	.alx-lang-change
 		ul
 			li
-				a.active(href="#") Eng
+				a.active(href=t.switcher.selfHref data-alx-lang-self title=t.switcher.activeFull)= t.switcher.active
 			li
-				a(href="#") Fin
-			li
-				a(href="#") Rus
+				a(href=t.switcher.otherHref data-alx-lang-link title=t.switcher.otherFull)= t.switcher.other
 	a.alx-burger.alx-burger__open(href="#")
 		span
 	.alx-sidebar-widget
-		h5 HELLO THERE!
+		h5= t.sidebar.hello
 		img.img-responsive(src="images/person.jpg", alt="")
-		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+		p= t.sidebar.text
 	hr
 	
 
@@ -22,10 +20,10 @@ aside.alx-aside-sidebar.alx-aside-sidebar__dark.alx-bg-img#alx-sidebar(data-imag
 
 	include ../includes/_social-links.pug
 
-	.alx-copyright © Mumbrass 2018. All Rights Resevered
+	.alx-copyright= t.sidebar.copyright
 		br 
-		| Design and Development by
-		a(href="https://themeforest.net/user/alian4x" target="blanc") 
+		= t.sidebar.by
+		a(href="https://themeforest.net/user/alian4x" target="blank") 
 			strong  Alian4x
 		
 .alx-aside-sidebar__overlay

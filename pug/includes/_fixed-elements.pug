@@ -1,12 +1,10 @@
 .alx-lang-change
 	ul
 		li
-			a.active(href="#") Eng
+			a.active(href=t.switcher.selfHref data-alx-lang-self title=t.switcher.activeFull)= t.switcher.active
 		li
-			a(href="#") Fin
-		li
-			a(href="#") Rus
+			a(href=t.switcher.otherHref data-alx-lang-link title=t.switcher.otherFull)= t.switcher.other
 .alx-copyright
 	p
 		span ©
-		|Mumbrass 2018
+		= t.footer.copyright

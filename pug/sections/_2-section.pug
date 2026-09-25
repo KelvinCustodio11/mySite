@@ -7,15 +7,15 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 				.alx-heading
 					.alx-heading__pretitle
 						i.fa.fa-diamond
-						|My Specializations
-					h2.alx-heading__title My Best Services
+						= t.services.pretitle
+					h2.alx-heading__title= t.services.title
 					.alx-heading__zigzag
 						svg(x='0px', y='0px', viewBox='0 0 100 19.5')
 							g
 								polygon(points='79.3,18 69.6,8.3 60,18 50.3,8.3 40.6,18 31,8.3 21.3,18 11.7,8.3 3.4,16.5 0.6,13.7 11.7,2.7 21.3,12.3 31,2.7 \
 								40.6,12.3 50.3,2.7 60,12.3 69.6,2.7 79.3,12.3 88.9,2.7 100,13.6 97.2,16.4 89,8.3 ')
-					.alx-heading__description In my work I using a variety of techniques and instruments like: HTML5, CSS3, Jquery, Responsive Design, Bootstrap Framework. I'm using the latest technologies and the latest trends in web development.
-				a.alx-btn(href="#page9") Start a project
+					.alx-heading__description= t.services.description
+				a.alx-btn(href="#page9")= t.services.cta
 			.col-lg-6.offset-lg-1
 				.alx-services.alx-dots-style(data-interval="7000")
 					.alx-services__container
@@ -23,33 +23,33 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-film
-									h4.alx-services__item__title Video Editor
+									h4.alx-services__item__title= t.services.items.video.title
 
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+								.alx-services__item__description= t.services.items.video.text
 								.alx-services__item__opacityicon
 									i.fa.fa-film
 						.alx-services__item
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-camera-retro
-									h4.alx-services__item__title Photograther
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+									h4.alx-services__item__title= t.services.items.photo.title
+								.alx-services__item__description= t.services.items.photo.text
 								.alx-services__item__opacityicon
 									i.fa.fa-camera-retro
 						.alx-services__item
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-diamond
-									h4.alx-services__item__title Designer
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+									h4.alx-services__item__title= t.services.items.designer.title
+								.alx-services__item__description= t.services.items.designer.text
 								.alx-services__item__opacityicon
 									i.fa.fa-diamond
 						.alx-services__item
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-feed
-									h4.alx-services__item__title Manager
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+									h4.alx-services__item__title= t.services.items.manager.title
+								.alx-services__item__description= t.services.items.manager.text
 								.alx-services__item__opacityicon
 									i.fa.fa-feed
 					.alx-services__container
@@ -57,33 +57,33 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-wordpress
-									h4.alx-services__item__title WordPress
+									h4.alx-services__item__title= t.services.items.wordpress.title
 
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+								.alx-services__item__description= t.services.items.wordpress.text
 								.alx-services__item__opacityicon
 									i.fa.fa-wordpress
 						.alx-services__item
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-css3
-									h4.alx-services__item__title CSS&HTML
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+									h4.alx-services__item__title= t.services.items.css.title
+								.alx-services__item__description= t.services.items.css.text
 								.alx-services__item__opacityicon
 									i.fa.fa-css3
 						.alx-services__item
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-opencart
-									h4.alx-services__item__title OpenCart
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+									h4.alx-services__item__title= t.services.items.opencart.title
+								.alx-services__item__description= t.services.items.opencart.text
 								.alx-services__item__opacityicon
 									i.fa.fa-opencart
 						.alx-services__item
 							.alx-services__item__wrap
 								.alx-services__item__main
 									i.fa.fa-connectdevelop
-									h4.alx-services__item__title Support
-								.alx-services__item__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto magni eligendi eveniet veritatis.
+									h4.alx-services__item__title= t.services.items.support.title
+								.alx-services__item__description= t.services.items.support.text
 								.alx-services__item__opacityicon
 									i.fa.fa-connectdevelop
 					

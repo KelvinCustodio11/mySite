@@ -1,12 +1,12 @@
 section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-image="images/bg10.jpg")
 	.alx-vertical-heading
 		i.fa.fa-commenting-o
-		| Clients say about me
+		= t.testimonials.vertical
 	.container
 		.row
 			.col-lg-12
 				.alx-heading
-					h2.alx-heading__title Testimonials
+					h2.alx-heading__title= t.testimonials.title
 					.alx-heading__zigzag
 						svg(x='0px', y='0px', viewBox='0 0 100 19.5')
 							g
@@ -24,8 +24,8 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 								i.fa.fa-star
 								i.fa.fa-star
 								i.fa.fa-star-half-o
-							.alx-testimonials__item__name Sean Kline
-							.alx-testimonials__item__text The developer of this theme is flexible. There were some bugs that needed to be fixed. He fixed it fast and efficiently. I even had some extra suggestions (request) about the theme
+							.alx-testimonials__item__name= t.testimonials.items[0].name
+							.alx-testimonials__item__text= t.testimonials.items[0].text
 					.alx-testimonials__item
 						img(src="images/review2.jpg", alt="")
 						.alx-testimonials__content
@@ -36,8 +36,8 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 								i.fa.fa-star
 								i.fa.fa-star
 								i.fa.fa-star
-							.alx-testimonials__item__name Tessa Winter
-							.alx-testimonials__item__text Fell in love with the design at first sight. Amazing work. I also want to express my great gratitude for the support and help in setting up. I also helped add more features! Thank you so much!
+							.alx-testimonials__item__name= t.testimonials.items[1].name
+							.alx-testimonials__item__text= t.testimonials.items[1].text
 					.alx-testimonials__item
 						img(src="images/review3.jpg", alt="")
 						.alx-testimonials__content
@@ -48,8 +48,8 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 								i.fa.fa-star
 								i.fa.fa-star
 								i.fa.fa-star-half-o
-							.alx-testimonials__item__name Jolie Salinas
-							.alx-testimonials__item__text Great customer support. Had a minor issue and it was resolved by the support team within 24 hours. Highly recommend purchasing this theme.
+							.alx-testimonials__item__name= t.testimonials.items[2].name
+							.alx-testimonials__item__text= t.testimonials.items[2].text
 					
 			
 				.alx-slider__nav

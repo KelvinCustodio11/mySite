@@ -1,0 +1,189 @@
+{
+  "t": {
+    "lang": "en",
+    "langSwitchLabel": "Language",
+    "title": "Mumbrass - Agency, Corporate, Studio Landing Page",
+    "description": "Web development portfolio. I build websites, landing pages and online stores with quality code.",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "skills": "Skills",
+      "prices": "Prices",
+      "portfolio": "Portfolio",
+      "reviews": "Reviews",
+      "clients": "Clients",
+      "contact": "Contact"
+    },
+    "switcher": {
+      "active": "EN",
+      "activeFull": "English",
+      "other": "PT",
+      "otherFull": "Português (Brasil)",
+      "otherHref": "index.html",
+      "selfHref": "en.html"
+    },
+    "sidebar": {
+      "hello": "HELLO THERE!",
+      "text": "I am a web developer focused on building fast, accessible and well-crafted digital experiences.",
+      "copyright": "Mumbrass 2018. All Rights Reserved",
+      "by": "Design and Development by"
+    },
+    "footer": {
+      "copyright": "Mumbrass 2018"
+    },
+    "hero": {
+      "pretitle": "Hello there",
+      "title1": "AWESOME SOLUTIONS",
+      "title2": "FOR YOUR BUSINESS",
+      "cta1": "Start a project",
+      "cta2": "See my works"
+    },
+    "about": {
+      "vertical": "Who i'm",
+      "experience": "6 Years of Experience",
+      "title": "About Me",
+      "description": "I have much experience in developing landing pages, online stores, corporate sites and home pages; experience in developing profitable business on the example of my clients. I know a lot of nuances that a web site must contain, and the elements which significantly affect the conversion.",
+      "pretitle": "My code is always High Quality, Hand-Coded",
+      "cta": "Become my client"
+    },
+    "services": {
+      "vertical": "What i do",
+      "pretitle": "My Specializations",
+      "title": "My Best Services",
+      "description": "In my work I use a variety of techniques and instruments like: HTML5, CSS3, jQuery, Responsive Design and the Bootstrap Framework. I'm using the latest technologies and the latest trends in web development.",
+      "cta": "Start a project",
+      "items": {
+        "video": {
+          "title": "Video Editor",
+          "text": "Video editing and production with precise cuts, rhythm and professional finish."
+        },
+        "photo": {
+          "title": "Photographer",
+          "text": "Photo shoots and image retouching for brands and products."
+        },
+        "designer": {
+          "title": "Designer",
+          "text": "Visual identity, layouts and interfaces designed to convert."
+        },
+        "manager": {
+          "title": "Manager",
+          "text": "Project planning and coordination from start to delivery."
+        },
+        "wordpress": {
+          "title": "WordPress",
+          "text": "Custom themes and plugins, with performance and easy editing."
+        },
+        "css": {
+          "title": "CSS & HTML",
+          "text": "Semantic markup and responsive styles written by hand."
+        },
+        "opencart": {
+          "title": "OpenCart",
+          "text": "Online stores configured, customized and ready to sell."
+        },
+        "support": {
+          "title": "Support",
+          "text": "Maintenance, fixes and continuous improvements after delivery."
+        }
+      }
+    },
+    "skills": {
+      "vertical": "What i do",
+      "title": "My Skills",
+      "description": "I do my job well and on time - that is an unshakable principle, more important than any amount of money.",
+      "strong": "Just check my portfolio and let's work together!",
+      "list": [
+        "WordPress Integration",
+        "PSD to Responsive HTML",
+        "SEO Optimization",
+        "Fully Responsive Design",
+        "Promo Pages Designs"
+      ],
+      "bars": {
+        "branding": "Logo / Branding",
+        "coding": "Coding",
+        "wordpress": "WordPress",
+        "html": "HTML5 / CSS3"
+      }
+    },
+    "prices": {
+      "vertical": "Investment",
+      "pretitle": "25$ my hourly rate",
+      "title": "Prices",
+      "from": "From",
+      "items": {
+        "promo": "Promo Websites Design",
+        "corporate": "Corporate Websites Design",
+        "services": "Web Services Design",
+        "ecommerce": "E-commerce Design",
+        "sketch": "Sketching & User Flow",
+        "homepage": "Homepage Design",
+        "inner": "Inner Page Design"
+      }
+    },
+    "portfolio": {
+      "vertical": "My Latest best Works",
+      "filters": {
+        "all": "All",
+        "branding": "Branding",
+        "web": "Web",
+        "graphic": "Graphic",
+        "logo": "Logo",
+        "photography": "Photography"
+      },
+      "category": "Creative",
+      "items": {
+        "1": "Creative Web Design",
+        "2": "New Site Design",
+        "3": "Company Logo Mockup",
+        "4": "New Site Design",
+        "5": "Simple Curves",
+        "6": "Modern Approach",
+        "7": "Brushes Preset",
+        "8": "Inspirable Website"
+      }
+    },
+    "testimonials": {
+      "vertical": "Clients say about me",
+      "title": "Testimonials",
+      "items": [
+        {
+          "name": "Sean Kline",
+          "text": "The developer of this theme is flexible. There were some bugs that needed to be fixed. He fixed it fast and efficiently. I even had some extra suggestions (request) about the theme."
+        },
+        {
+          "name": "Tessa Winter",
+          "text": "Fell in love with the design at first sight. Amazing work. I also want to express my great gratitude for the support and help in setting up. He also helped add more features! Thank you so much!"
+        },
+        {
+          "name": "Jolie Salinas",
+          "text": "Great customer support. Had a minor issue and it was resolved by the support team within 24 hours. Highly recommend purchasing this theme."
+        }
+      ]
+    },
+    "clients": {
+      "vertical": "Trusted by",
+      "title": "My Clients",
+      "description": "I seize every opportunity to develop long term business partnerships with companies who are leaders in their sector. I work closely with our network partners in order to deliver the best solutions available to our clients.",
+      "cta": "become my client"
+    },
+    "contact": {
+      "vertical": "Contact with me",
+      "title": "Say Hello",
+      "phone": "Call Me Anytime",
+      "phoneValue": "+754-554-54-34",
+      "email": "Email me",
+      "emailValue": "Office@domain.com",
+      "address": "Address",
+      "addressValue": "445 Mount Eden Road, Mount",
+      "form": {
+        "name": "Your Name *",
+        "email": "Your Email *",
+        "message": "Message *",
+        "submit": "Send a Message",
+        "success": "Message has been sent successfully"
+      }
+    }
+  }
+}

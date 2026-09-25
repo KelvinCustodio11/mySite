@@ -5,10 +5,12 @@
   "private": true,
   "scripts": {
     "css": "sass --load-path=sass --silence-deprecation=import,color-functions,global-builtin,if-function,slash-div sass/main.sass app/css/main.css --no-source-map && postcss app/css/main.css --use autoprefixer -o app/css/main.min.css --no-map && cleancss app/css/main.min.css -o app/css/main.min.css",
-    "html": "pug --pretty pug/index.pug -o app/",
+    "html": "npm run html:pt && npm run html:en",
+    "html:pt": "pug --pretty -O pug/locales/pt-BR.json pug/index.pug -o app/",
+    "html:en": "pug --pretty -O pug/locales/en.json pug/en.pug -o app/",
     "build": "npm run css && npm run html",
     "watch:css": "chokidar 'sass/**/*.sass' -c \"npm run css\" -d 200",
-    "watch:html": "pug --watch --pretty pug/index.pug -o app/",
+    "watch:html": "chokidar 'pug/**/*.pug' 'pug/locales/*.json' -c \"npm run html\" -d 200",
     "serve": "browser-sync start --server app --no-open --files 'app/**/*.html,app/css/*.css,app/js/*.js'",
     "dev": "npm run build && concurrently -k -n css,html,web -c yellow,cyan,green \"npm:watch:css\" \"npm:watch:html\" \"npm:serve\"",
     "start": "npm run dev"

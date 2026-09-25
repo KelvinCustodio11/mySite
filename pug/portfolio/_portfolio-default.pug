@@ -2,17 +2,17 @@
 div(class=""+portfolio_width)
 	.col-lg-12
 		ul(class="alx-portfolio-control alx-portfolio__nav "+portfolio_navigation)
-			li(data-filter="*").alx-active All
+			li(data-filter="*").alx-active= t.portfolio.filters.all
 				
-			li(data-filter=".alx-f-branding") Branding
+			li(data-filter=".alx-f-branding")= t.portfolio.filters.branding
 	
-			li(data-filter=".alx-f-web") Web
+			li(data-filter=".alx-f-web")= t.portfolio.filters.web
 				
-			li(data-filter=".alx-f-graphic") Graphic
+			li(data-filter=".alx-f-graphic")= t.portfolio.filters.graphic
 				
-			li(data-filter=".alx-f-logo") Logo
+			li(data-filter=".alx-f-logo")= t.portfolio.filters.logo
 
-			li(data-filter=".alx-f-photography")  Photography
+			li(data-filter=".alx-f-photography")= t.portfolio.filters.photography
 					
 
 	div(class="alx-portfolio-items alx-layout-isotope " + portfolio_wrap, data-grid=''+ portfolio_grid)
@@ -26,8 +26,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/1.jpg")
 				.alx-portfolio-item-details
-					h4 CREATIVE WEB DESIGN
-					p Creative
+					h4= t.portfolio.items["1"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-graphic
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -38,8 +38,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/2.jpg")
 				.alx-portfolio-item-details
-					h4 NEW SITE DESIGN
-					p Creative
+					h4= t.portfolio.items["2"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-web
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -50,8 +50,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/3.jpg")
 				.alx-portfolio-item-details
-					h4 COMPANY LOGO MOCKUP
-					p Creative
+					h4= t.portfolio.items["3"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-logo.alx-f-photography
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -62,8 +62,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/3.jpg")
 				.alx-portfolio-item-details
-					h4 NEW SITE DESIGN
-					p Creative
+					h4= t.portfolio.items["4"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-branding
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -74,8 +74,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/5.jpg")
 				.alx-portfolio-item-details
-					h4 SIMPLE CURVES
-					p Creative
+					h4= t.portfolio.items["5"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-web
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -86,8 +86,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/6.jpg")
 				.alx-portfolio-item-details
-					h4 MODERN APPROACH
-					p Creative
+					h4= t.portfolio.items["6"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-branding
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -98,8 +98,8 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/7.jpg")
 				.alx-portfolio-item-details
-					h4 BRUSHES PRESET
-					p Creative
+					h4= t.portfolio.items["7"]
+					p= t.portfolio.category
 		//- Start item
 		.alx-isotope-item.alx-f-graphic.alx-f-web.alx-f-photography
 			div(class="alx-portfolio-item " + portfolio_style)
@@ -110,6 +110,6 @@ div(class=""+portfolio_width)
 				.alx-portfolio-item-image
 					div.alx-bg-img(data-image="images/portfolio/8.jpg")
 				.alx-portfolio-item-details
-					h4 INSPIRABLE WEBSITE
-					p Creative
+					h4= t.portfolio.items["8"]
+					p= t.portfolio.category
 		

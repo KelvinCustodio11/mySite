@@ -1,0 +1,189 @@
+{
+  "t": {
+    "lang": "pt-BR",
+    "langSwitchLabel": "Idioma",
+    "title": "Mumbrass - Agência, Corporativo, Estúdio e Landing Page",
+    "description": "Portfólio de desenvolvimento web. Crio sites, landing pages e lojas virtuais com código de qualidade.",
+    "menu": {
+      "home": "Início",
+      "about": "Sobre",
+      "services": "Serviços",
+      "skills": "Habilidades",
+      "prices": "Preços",
+      "portfolio": "Portfólio",
+      "reviews": "Depoimentos",
+      "clients": "Clientes",
+      "contact": "Contato"
+    },
+    "switcher": {
+      "active": "PT",
+      "activeFull": "Português (Brasil)",
+      "other": "EN",
+      "otherFull": "English",
+      "otherHref": "en.html",
+      "selfHref": "index.html"
+    },
+    "sidebar": {
+      "hello": "OLÁ!",
+      "text": "Sou desenvolvedor web focado em criar experiências digitais rápidas, acessíveis e bem construídas.",
+      "copyright": "Mumbrass 2018. Todos os direitos reservados",
+      "by": "Design e desenvolvimento por"
+    },
+    "footer": {
+      "copyright": "Mumbrass 2018"
+    },
+    "hero": {
+      "pretitle": "Olá",
+      "title1": "SOLUÇÕES INCRÍVEIS",
+      "title2": "PARA O SEU NEGÓCIO",
+      "cta1": "Iniciar um projeto",
+      "cta2": "Ver meus trabalhos"
+    },
+    "about": {
+      "vertical": "Quem sou eu",
+      "experience": "6 Anos de Experiência",
+      "title": "Sobre Mim",
+      "description": "Tenho muita experiência no desenvolvimento de landing pages, lojas virtuais, sites corporativos e páginas iniciais; experiência em construir negócios rentáveis junto com meus clientes. Conheço todos os detalhes que um site precisa ter e os elementos que impactam significativamente na conversão.",
+      "pretitle": "Meu código é sempre de alta qualidade, feito à mão",
+      "cta": "Torne-se meu cliente"
+    },
+    "services": {
+      "vertical": "O que eu faço",
+      "pretitle": "Minhas Especializações",
+      "title": "Meus Melhores Serviços",
+      "description": "No meu trabalho eu uso diversas técnicas e ferramentas como: HTML5, CSS3, jQuery, Design Responsivo e o framework Bootstrap. Uso as tecnologias mais recentes e as últimas tendências do desenvolvimento web.",
+      "cta": "Iniciar um projeto",
+      "items": {
+        "video": {
+          "title": "Editor de Vídeo",
+          "text": "Edição e produção de vídeos com cortes precisos, ritmo e acabamento profissional."
+        },
+        "photo": {
+          "title": "Fotógrafo",
+          "text": "Ensaios fotográficos e tratamento de imagens para marcas e produtos."
+        },
+        "designer": {
+          "title": "Designer",
+          "text": "Identidade visual, layouts e interfaces pensados para converter."
+        },
+        "manager": {
+          "title": "Gestor",
+          "text": "Planejamento e coordenação de projetos do início até a entrega."
+        },
+        "wordpress": {
+          "title": "WordPress",
+          "text": "Temas e plugins sob medida, com desempenho e facilidade de edição."
+        },
+        "css": {
+          "title": "CSS & HTML",
+          "text": "Marcação semântica e estilos responsivos escritos à mão."
+        },
+        "opencart": {
+          "title": "OpenCart",
+          "text": "Lojas virtuais configuradas, personalizadas e prontas para vender."
+        },
+        "support": {
+          "title": "Suporte",
+          "text": "Manutenção, correções e melhorias contínuas depois da entrega."
+        }
+      }
+    },
+    "skills": {
+      "vertical": "O que eu faço",
+      "title": "Minhas Habilidades",
+      "description": "Fazer bem feito e no prazo é um princípio inabalável, mais importante do que qualquer valor em dinheiro.",
+      "strong": "Conheça o meu portfólio e vamos trabalhar juntos!",
+      "list": [
+        "Integração WordPress",
+        "PSD para HTML responsivo",
+        "Otimização para SEO",
+        "Design totalmente responsivo",
+        "Designs de páginas promocionais"
+      ],
+      "bars": {
+        "branding": "Logo / Identidade",
+        "coding": "Programação",
+        "wordpress": "WordPress",
+        "html": "HTML5 / CSS3"
+      }
+    },
+    "prices": {
+      "vertical": "Investimento",
+      "pretitle": "25$ meu valor por hora",
+      "title": "Preços",
+      "from": "A partir de",
+      "items": {
+        "promo": "Design de sites promocionais",
+        "corporate": "Design de sites corporativos",
+        "services": "Design de serviços web",
+        "ecommerce": "Design de e-commerce",
+        "sketch": "Rascunhos e fluxo do usuário",
+        "homepage": "Design de página inicial",
+        "inner": "Design de páginas internas"
+      }
+    },
+    "portfolio": {
+      "vertical": "Meus melhores trabalhos recentes",
+      "filters": {
+        "all": "Todos",
+        "branding": "Marca",
+        "web": "Web",
+        "graphic": "Gráfico",
+        "logo": "Logo",
+        "photography": "Fotografia"
+      },
+      "category": "Criativo",
+      "items": {
+        "1": "Design criativo de site",
+        "2": "Design de novo site",
+        "3": "Mockup de logo corporativo",
+        "4": "Design de novo site",
+        "5": "Curvas simples",
+        "6": "Abordagem moderna",
+        "7": "Pincéis predefinidos",
+        "8": "Site inspirador"
+      }
+    },
+    "testimonials": {
+      "vertical": "O que dizem sobre mim",
+      "title": "Depoimentos",
+      "items": [
+        {
+          "name": "Sean Kline",
+          "text": "O desenvolvedor deste tema é flexível. Havia alguns bugs que precisavam ser corrigidos. Ele corrigiu rápido e com eficiência. Eu até tinha sugestões extras sobre o tema."
+        },
+        {
+          "name": "Tessa Winter",
+          "text": "Me apaixonei pelo design à primeira vista. Trabalho incrível. Quero expressar também minha gratidão pelo apoio e pela ajuda na configuração. Ainda me ajudou a adicionar mais recursos! Muito obrigada!"
+        },
+        {
+          "name": "Jolie Salinas",
+          "text": "Ótimo suporte ao cliente. Tive um problema pequeno e a equipe resolveu em menos de 24 horas. Recomendo muito a compra deste tema."
+        }
+      ]
+    },
+    "clients": {
+      "vertical": "Confiado por",
+      "title": "Meus Clientes",
+      "description": "Aproveito cada oportunidade para construir parcerias de longo prazo com empresas que são líderes em seus setores. Trabalho em estreita colaboração com nossa rede de parceiros para entregar as melhores soluções disponíveis aos nossos clientes.",
+      "cta": "torne-se meu cliente"
+    },
+    "contact": {
+      "vertical": "Fale comigo",
+      "title": "Diga Olá",
+      "phone": "Ligue a qualquer hora",
+      "phoneValue": "+55 11 99999-0000",
+      "email": "Envie um e-mail",
+      "emailValue": "contato@dominio.com",
+      "address": "Endereço",
+      "addressValue": "445 Rua Mount Eden, São Paulo",
+      "form": {
+        "name": "Seu nome *",
+        "email": "Seu e-mail *",
+        "message": "Mensagem *",
+        "submit": "Enviar mensagem",
+        "success": "Mensagem enviada com sucesso"
+      }
+    }
+  }
+}
