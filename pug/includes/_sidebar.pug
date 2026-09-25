@@ -1,0 +1,31 @@
+aside.alx-aside-sidebar.alx-aside-sidebar__dark.alx-bg-img#alx-sidebar(data-image="images/sidebar.jpg")
+	.alx-lang-change
+		ul
+			li
+				a.active(href="#") Eng
+			li
+				a(href="#") Fin
+			li
+				a(href="#") Rus
+	a.alx-burger.alx-burger__open(href="#")
+		span
+	.alx-sidebar-widget
+		h5 HELLO THERE!
+		img.img-responsive(src="images/person.jpg", alt="")
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+	hr
+	
+
+	.alx-sidebar-menu
+		ul
+			include ../html/_menu.pug
+
+	include ../includes/_social-links.pug
+
+	.alx-copyright © Mumbrass 2018. All Rights Resevered
+		br 
+		| Design and Development by
+		a(href="https://themeforest.net/user/alian4x" target="blanc") 
+			strong  Alian4x
+		
+.alx-aside-sidebar__overlay

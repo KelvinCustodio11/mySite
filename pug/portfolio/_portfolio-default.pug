@@ -1,0 +1,115 @@
+
+div(class=""+portfolio_width)
+	.col-lg-12
+		ul(class="alx-portfolio-control alx-portfolio__nav "+portfolio_navigation)
+			li(data-filter="*").alx-active All
+				
+			li(data-filter=".alx-f-branding") Branding
+	
+			li(data-filter=".alx-f-web") Web
+				
+			li(data-filter=".alx-f-graphic") Graphic
+				
+			li(data-filter=".alx-f-logo") Logo
+
+			li(data-filter=".alx-f-photography")  Photography
+					
+
+	div(class="alx-portfolio-items alx-layout-isotope " + portfolio_wrap, data-grid=''+ portfolio_grid)
+		//- Start item
+		.alx-isotope-item.alx-f-branding.alx-f-photography
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/1.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/1.jpg")
+				.alx-portfolio-item-details
+					h4 CREATIVE WEB DESIGN
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-graphic
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/2.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/2.jpg")
+				.alx-portfolio-item-details
+					h4 NEW SITE DESIGN
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-web
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/3.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/3.jpg")
+				.alx-portfolio-item-details
+					h4 COMPANY LOGO MOCKUP
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-logo.alx-f-photography
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/4.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/3.jpg")
+				.alx-portfolio-item-details
+					h4 NEW SITE DESIGN
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-branding
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/5.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/5.jpg")
+				.alx-portfolio-item-details
+					h4 SIMPLE CURVES
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-web
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/6.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/6.jpg")
+				.alx-portfolio-item-details
+					h4 MODERN APPROACH
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-branding
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/7.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/7.jpg")
+				.alx-portfolio-item-details
+					h4 BRUSHES PRESET
+					p Creative
+		//- Start item
+		.alx-isotope-item.alx-f-graphic.alx-f-web.alx-f-photography
+			div(class="alx-portfolio-item " + portfolio_style)
+				if portfolio_link
+					a(href="portfolio-single.html")
+				else
+					a.alx-img-gallery(href="images/portfolio/8.jpg")
+				.alx-portfolio-item-image
+					div.alx-bg-img(data-image="images/portfolio/8.jpg")
+				.alx-portfolio-item-details
+					h4 INSPIRABLE WEBSITE
+					p Creative
+		

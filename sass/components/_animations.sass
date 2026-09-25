@@ -1,0 +1,47 @@
+
+//Animation content pp-section
++media-breakpoint-up(md)
+	.pp-section
+		transition: all ease 1s
+		.container, .container-fluid
+			//amination
+			opacity: 0
+			transform: translateY(30%) scale(0.8)
+			transition: all 0.9s
+			transition-delay: 0.3s
+		.alx-vertical-heading
+			opacity: 0
+			transition: all ease 1s
+			transition-delay: 0.4s
+		&.active
+			.alx-vertical-heading
+				opacity: 1
+			.container, .container-fluid
+				opacity: 1
+				transform: translateY(0) scale(1)
+	
+/*mfp*/
+.mfp-fade
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.15s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.15s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
+
+@keyframes rotate-360
+	from
+		transform: rotate(45deg)
+
+	to
+		transform: rotate(400deg)
+

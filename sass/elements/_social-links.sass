@@ -1,0 +1,65 @@
+.alx-social-links
+	ul
+		margin: 0
+		padding: 0
+		display: flex
+		li
+			list-style: none
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			a
+				color: #ffffff
+				text-decoration: none
+				&:hover
+					color: $accent
+	&__2
+		ul
+			margin: 0
+			padding: 0
+			display: flex
+			li
+				list-style: none
+				border-radius: 50% 
+				border: 7px solid rgba(#fff, 0.5)
+				transition: all ease-in-out 0.3s
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-right: 20px
+				&:last-child
+					margin-right: 0
+				a
+					cursor: pointer
+					background-color: #fff
+					border-radius: 50%
+					text-align: center
+					width: 30px
+					height: 30px
+					display: flex
+					justify-content: center
+					align-items: center
+					position: relative
+					z-index: 3
+					text-decoration: none
+					color: $accent
+					transition: all ease-in-out 0.3s
+				&:hover
+					border-color: rgba($accent, 0.5)
+					a
+						box-shadow: 0 0 5px shade($accent, 20%)
+				&:before
+					content: ""
+					height: 2px
+					width: 44px
+					transform: rotate(45deg)
+					background-color: $accent
+					position: absolute
+					z-index: -1
+					+mt(0.3s)
+				&:hover
+					&:before
+						animation: rotate-360 5s linear
+						animation-iteration-count: infinite
+						animation-direction: alternate
+			

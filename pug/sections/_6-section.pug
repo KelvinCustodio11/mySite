@@ -1,0 +1,15 @@
+section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-image="images/bg5.jpg")
+	.alx-vertical-heading
+		i.fa.fa-rocket
+		| My Latest best Works
+
+	//--START Portfolio Default
+	- var portfolio_style = 'alx-portfolio-item__style1';
+	- var portfolio_grid = '4';
+	- var portfolio_width = 'container';
+	- var portfolio_navigation = 'alx-text-left';
+	- var portfolio_wrap = 'alx-isotope-gap';
+	- var portfolio_link = false;
+
+	include ../portfolio/_portfolio-default.pug
+	//--END Portfolio Default

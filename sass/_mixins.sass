@@ -1,0 +1,35 @@
+@mixin vertical-align($position: relative)
+	position: $position
+	top: 50%
+	transform: translateY(-50%)
+@function tint($color, $percentage)
+	@return mix(white, $color, $percentage)
+
+@function shade($color, $percentage)
+	@return mix(black, $color, $percentage)
+
+@mixin scrollbar
+	&::-webkit-scrollbar-track
+		background-color: #fff
+	&::-webkit-scrollbar
+		width: 5px
+		background-color: #fff
+	&::-webkit-scrollbar-thumb
+		background-color: $accent
+=mt($time)
+	transition: all $time ease-in-out
+
+@mixin scrollbar
+	&::-webkit-scrollbar-track
+		background-color: #fff
+	&::-webkit-scrollbar
+		width: 5px
+		background-color: #fff
+	&::-webkit-scrollbar-thumb
+		background-color: $accent
+
+@mixin clearfix()
+	&:after, &:before
+		display: block
+		content: ""
+		clear: both
