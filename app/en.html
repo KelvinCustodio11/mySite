@@ -44,7 +44,7 @@
         </div>
       </header>
       <div id="alx-pagepiling">
-        <section class="alx-hero alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg2.jpg">
+        <section class="alx-hero alx-vertical-middle alx-white-section pp-scrollable" data-scene="ide">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
@@ -67,8 +67,9 @@
             </div>
           </div>
           <div class="alx-canvas" id="alx-particles"></div>
+          <canvas class="alx-scene" data-scene="ide" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img jarallax" data-jarallax-video="https://www.youtube.com/watch?v=LcF6ut-1M94">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="path">
           <div class="alx-vertical-heading"><i class="fa fa-question-circle-o"></i>Who i'm
           </div>
           <div class="container">
@@ -95,8 +96,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="path" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg1.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="layers">
           <div class="container">
             <div class="row align-items-center">
               <div class="col-lg-5 alx-style" data-style="margin: 50px 0">
@@ -196,8 +198,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="layers" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg3.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="rain">
           <div class="alx-vertical-heading"><i class="fa fa-code"></i>What i'm good at
           </div>
           <div class="container">
@@ -269,8 +272,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="rain" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg4.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="stack">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-5">
@@ -333,8 +337,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="stack" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg5.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="wire">
           <div class="alx-vertical-heading"><i class="fa fa-rocket"></i>My Latest best Works
           </div>
           <div class="container">
@@ -439,8 +444,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="wire" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg10.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="chat">
           <div class="alx-vertical-heading"><i class="fa fa-commenting-o"></i>Clients say about me
           </div>
           <div class="container">
@@ -493,8 +499,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="chat" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg4.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="radar">
           <div class="alx-vertical-heading"><i class="fa fa-heart-o"></i>Trusted by
           </div>
           <div class="container">
@@ -558,8 +565,9 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="radar" aria-hidden="true"></canvas>
         </section>
-        <section class="alx-vertical-middle alx-white-section pp-scrollable alx-bg-img" data-image="images/bg12.jpg">
+        <section class="alx-vertical-middle alx-white-section pp-scrollable" data-scene="signal">
           <div class="alx-vertical-heading"><i class="fa fa-bell-o"></i>Contact with me
           </div>
           <div class="container">
@@ -626,6 +634,7 @@
               </div>
             </div>
           </div>
+          <canvas class="alx-scene" data-scene="signal" aria-hidden="true"></canvas>
         </section>
       </div>
       <!--Content END-->
@@ -695,6 +704,8 @@
     <script src="libs/readmore/readmore.min.js"></script>
     <!--Use scripts-->
     <script src="js/main.min.js"></script>
+    <!--Animações de fundo das seções (canvas, sem mídia)-->
+    <script src="js/scenes.js"></script>
     <!--Idioma (pt-BR <-> en) preservando a seção ativa-->
     <script src="js/lang.js"></script>
   </body>

@@ -116,6 +116,7 @@ sass/_libs.sass         importa Bootstrap 4 + Font Awesome + slick + magnific
 sass/_mixins.sass       mixins próprios
 sass/_media.sass        media queries
 sass/elements/*.sass    header, sidebar, skills, portfolio, testimonials...
+                        + scenes (fundo animado de cada seção)
 sass/components/*.sass  animações
 ```
 
@@ -143,6 +144,52 @@ pug/portfolio/*.pug     filtros e itens do portfólio
 
 ---
 
+## Animações de fundo
+
+Cada uma das 9 seções tem uma animação de fundo **100% em código** — sem imagem,
+vídeo ou GIF. O desenho acontece num `<canvas>` que fica atrás do conteúdo.
+
+| Arquivo | Papel |
+| --- | --- |
+| `app/js/scenes.js` | motor + as 9 cenas (arquivo novo, editar direto) |
+| `sass/elements/_scenes.sass` | posiciona o canvas e pinta o gradiente de cada seção |
+| `pug/sections/_N-section.pug` | `data-scene='…'` + `canvas.alx-scene(aria-hidden='true')` |
+| `pug/html/_scripts.pug` | inclui `js/scenes.js` |
+
+### As 9 cenas
+
+| Seção | `data-scene` | O que faz |
+| --- | --- | --- |
+| 01 Hero | `ide` | editor de código com máquina de escrever, realce de sintaxe e barra de build |
+| 02 Sobre mim | `path` | linha do tempo que se desenha de 2018 até "hoje", com nós pulsando |
+| 03 Especializações | `layers` | camadas deslizam e se empilham em profundidade |
+| 04 Habilidades | `rain` | chuva de símbolos de código descendo em várias velocidades |
+| 05 Stack | `stack` | blocos isométricos empilhados girando devagar |
+| 06 Portfólio | `wire` | wireframes de navegador montando e desmontando |
+| 07 Depoimentos | `chat` | balões de conversa subindo com "digitando…" |
+| 08 Clientes | `radar` | varredura de radar com contatos acendendo no caminho |
+| 09 Contato | `signal` | ondas de rádio saindo do ponto central, como um ping |
+
+### Detalhes que valem saber
+
+- **Só código, sem mídia** — nada de `bg*.jpg`, vídeo do YouTube ou GIF.
+- **Sem texto no canvas** — os únicos textos são os snippets do editor, que têm
+  dicionário `pt`/`en` lido de `document.documentElement.lang`. Assim nada quebra
+  a troca de idioma.
+- **Só anima o que está visível** — a cena só roda quando a seção aparece no
+  `getBoundingClientRect`, então o custo é de uma cena por vez.
+- **Respeita `prefers-reduced-motion`** — desenha um quadro estático e para.
+- **DPR-aware** — o canvas acompanha a densidade de pixels da tela.
+- **Throttle em ~40 fps** e cache do realce de sintaxe/`measureText` — o laço
+  caiu de ~9,9 ms para ~2 ms de mediana.
+
+Para mexer num fundo: altere a função da cena em `app/js/scenes.js` (é JS puro,
+sem dependência) e rode `npm run build`. A paleta fica no topo do arquivo e
+espelha `sass/_vars.sass`: `ACC` (acento `#B0CA1E`), `LITE` (quase branco),
+`COOL` (cinza azulado), `DIM` (apagado) e `CYAN`.
+
+---
+
 ## Estrutura do projeto
 
 ```
@@ -150,7 +197,8 @@ app/          ← o site pronto (o que vai pro servidor)
   index.html      gerado por pug (pt-BR, padrão)
   en.html         gerado por pug (inglês)
   css/            gerado por sass  (main.css + main.min.css)
-  js/             common.js (fonte), main.min.js (o que carrega), lang.js (idioma)
+  js/             common.js (fonte), main.min.js (o que carrega), lang.js (idioma),
+                  scenes.js (animações de fundo)
   libs/           bibliotecas JS/CSS usadas pelo site
   images/, img/, fonts/
   mail.php        handler do formulário (requer PHP)

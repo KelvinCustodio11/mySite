@@ -1,0 +1,87 @@
+// ---------------------------------------------------------------------------
+// Cenas de fundo — app/js/scenes.js
+//
+// Uma animação por seção da primeira página, 100% em código (canvas 2D):
+// nada de imagem, vídeo ou GIF no lugar das fotos bg*.jpg.
+//
+// A seção vira um contexto de empilhamento próprio (isolation) para que o
+// canvas, que fica em z-index negativo, seja pintado acima do background da
+// própria seção e abaixo do conteúdo — sem depender do z-index inline que o
+// pagePiling escreve.
+// ---------------------------------------------------------------------------
+
+.alx-white-section
+	isolation: isolate
+
+.alx-scene
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: -1
+	pointer-events: none
+
+// Menos partículas em telas pequenas (bateria + legibilidade do texto)
++media-breakpoint-down(sm)
+	.alx-scene
+		opacity: 0.6
+
+// ---------------------------------------------------------------------------
+// Base comum: grafite escuro, igual ao clima das seções escuras do template
+// ---------------------------------------------------------------------------
+section[data-scene]
+	background-color: #0d0f12
+	background-image: linear-gradient(160deg, #171b21 0%, #101317 55%, #0b0d10 100%)
+	background-repeat: no-repeat
+	background-position: 50% 50%
+
+// 01 · hero — brilho accent no alto à direita
+section[data-scene='ide']
+	background-image: radial-gradient(1150px 720px at 78% 14%, rgba($accent, 0.13), transparent 62%), linear-gradient(155deg, #171c22 0%, #101318 55%, #0a0c0f 100%)
+
+// 02 · sobre mim — brilho embaixo à esquerda
+section[data-scene='path']
+	background-image: radial-gradient(960px 660px at 12% 84%, rgba($accent, 0.11), transparent 62%), linear-gradient(200deg, #141920 0%, #0d1015 55%, #0a0d11 100%)
+
+// 03 · o que eu desenvolvo — tom esverdeado à direita
+section[data-scene='layers']
+	background-image: radial-gradient(1000px 680px at 88% 76%, rgba(64, 176, 176, 0.12), transparent 62%), linear-gradient(160deg, #141a1e 0%, #0e1216 55%, #0a0d10 100%)
+
+// 04 · habilidades — brilho concentrado à esquerda
+section[data-scene='rain']
+	background-image: radial-gradient(1020px 720px at 18% 32%, rgba($accent, 0.11), transparent 60%), linear-gradient(150deg, #12171c 0%, #0d1116 55%, #090b0e 100%)
+
+// 05 · stack — grade de blueprint + brilho no centro embaixo
+section[data-scene='stack']
+	background-image: linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px), radial-gradient(940px 640px at 50% 80%, rgba($accent, 0.12), transparent 64%), linear-gradient(160deg, #14181d 0%, #0e1116 55%, #0a0c10 100%)
+	background-size: 56px 56px, 56px 56px, auto, auto
+
+// 06 · portfólio — grade mais fina + brilho azulado
+section[data-scene='wire']
+	background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px), radial-gradient(1020px 640px at 24% 22%, rgba(126, 156, 224, 0.12), transparent 62%), linear-gradient(150deg, #13171d 0%, #0e1116 55%, #0a0c10 100%)
+	background-size: 46px 46px, 46px 46px, auto, auto
+
+// 07 · depoimentos — brilho violáceo
+section[data-scene='chat']
+	background-image: radial-gradient(980px 660px at 72% 28%, rgba(156, 124, 240, 0.13), transparent 62%), linear-gradient(165deg, #16161f 0%, #101018 55%, #0a0a10 100%)
+
+// 08 · clientes — halo central (combina com o radar)
+section[data-scene='radar']
+	background-image: radial-gradient(820px 820px at 50% 50%, rgba($accent, 0.10), transparent 66%), linear-gradient(155deg, #11161a 0%, #0d1114 55%, #0a0d10 100%)
+
+// 09 · contato — foco no ponto de encontro das partículas
+section[data-scene='signal']
+	background-image: radial-gradient(940px 720px at 50% 46%, rgba($accent, 0.13), transparent 62%), linear-gradient(180deg, #12161b 0%, #0d1014 55%, #0a0c0f 100%)
+
+// ---------------------------------------------------------------------------
+// Hero: o editor (canvas) fica sob um véu radial para o título respirar
+// ---------------------------------------------------------------------------
+.alx-hero
+	&::before
+		z-index: 0
+		background: radial-gradient(58% 56% at 50% 50%, rgba(6, 8, 10, 0.68), rgba(6, 8, 10, 0.36) 62%, rgba(6, 8, 10, 0.16) 100%)
+	.container
+		position: relative
+		z-index: 1

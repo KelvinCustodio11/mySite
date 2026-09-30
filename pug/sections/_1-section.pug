@@ -1,16 +1,17 @@
-section.alx-hero.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-image="images/bg2.jpg")
+section.alx-hero.alx-vertical-middle.alx-white-section.pp-scrollable(data-scene='ide')
 	.container
 		.row.justify-content-center
 			.col-lg-8
 				.alx-heading.alx-text-center
 					.alx-heading__pretitle
 						i.fa.fa-hand-peace-o
-						= t.hero.pretitle
-					h1.alx-heading__title= t.hero.title1
-						br
-						= t.hero.title2
-						br
-						= t.hero.title3
+						span.alx-pretype= t.hero.pretitle
+					//- O título real fica no .sr-only (leitor de tela/JS desligado);
+					//- o texto animado é aria-hidden e é digitado pelo js/typewriter.js
+					h1.alx-heading__title.alx-typed(data-phrases=JSON.stringify(t.hero.phrases))
+						span.sr-only= t.hero.title
+						span.alx-typed__prompt(aria-hidden='true')= '>'
+						span.alx-typed__body(aria-hidden='true')= t.hero.phrases[0]
 					.alx-heading__zigzag
 						svg(x='0px', y='0px', viewBox='0 0 100 19.5')
 							g
@@ -22,3 +23,4 @@ section.alx-hero.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(
 					a.alx-btn.alx-btn-primary(href="#page6")= t.hero.cta2
 			.col-lg-6.offset-lg-1
 	#alx-particles.alx-canvas
+	canvas.alx-scene(data-scene='ide' aria-hidden='true')
