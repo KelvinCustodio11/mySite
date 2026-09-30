@@ -19,10 +19,10 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 				.alx-icon
 					.alx-icon__icon
 						span
-							i.fa.fa-phone
+							i.fa.fa-whatsapp
 					.alx-icon__text
 						h5= t.contact.phone
-						p= t.contact.phoneValue
+						a(href=t.social.whatsapp target="_blank" rel="noopener")= t.contact.phoneValue
 				.alx-icon
 					.alx-icon__icon
 						span
@@ -30,6 +30,8 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 					.alx-icon__text
 						h5= t.contact.email
 						a(href="mailto:" + t.contact.emailValue)= t.contact.emailValue
+						br
+						a(href="mailto:" + t.contact.emailValue2)= t.contact.emailValue2
 				.alx-icon
 					.alx-icon__icon
 						span

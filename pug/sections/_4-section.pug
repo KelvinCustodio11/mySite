@@ -4,9 +4,9 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 			.col-lg-5
 				.alx-heading
 					.alx-heading__pretitle
-						i.fa.fa-money
-						= t.prices.pretitle
-					h2.alx-heading__title= t.prices.title
+						i.fa.fa-cubes
+						= t.stack.pretitle
+					h2.alx-heading__title= t.stack.title
 					.alx-heading__zigzag
 						svg(x='0px', y='0px', viewBox='0 0 100 19.5')
 							g
@@ -14,42 +14,42 @@ section.alx-vertical-middle.alx-white-section.pp-scrollable.alx-bg-img(data-imag
 								40.6,12.3 50.3,2.7 60,12.3 69.6,2.7 79.3,12.3 88.9,2.7 100,13.6 97.2,16.4 89,8.3 ')
 
 				.alx-price
-					.alx-price__title= t.prices.items.promo
+					.alx-price__title= t.stack.items.backend.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
+						span= t.stack.items.backend.label
+						p= t.stack.items.backend.tech
 				.alx-price
-					.alx-price__title= t.prices.items.corporate
+					.alx-price__title= t.stack.items.framework.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
+						span= t.stack.items.framework.label
+						p= t.stack.items.framework.tech
 				.alx-price
-					.alx-price__title= t.prices.items.services
+					.alx-price__title= t.stack.items.frontend.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
-					
-				
+						span= t.stack.items.frontend.label
+						p= t.stack.items.frontend.tech
+
+
 			.col-lg-5.offset-lg-2.align-self-end
 				.alx-price
-					.alx-price__title= t.prices.items.ecommerce
+					.alx-price__title= t.stack.items.language.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
+						span= t.stack.items.language.label
+						p= t.stack.items.language.tech
 				.alx-price
-					.alx-price__title= t.prices.items.sketch
+					.alx-price__title= t.stack.items.database.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
+						span= t.stack.items.database.label
+						p= t.stack.items.database.tech
 				.alx-price
-					.alx-price__title= t.prices.items.homepage
+					.alx-price__title= t.stack.items.infra.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
+						span= t.stack.items.infra.label
+						p= t.stack.items.infra.tech
 				.alx-price
-					.alx-price__title= t.prices.items.inner
+					.alx-price__title= t.stack.items.testing.title
 					.alx-price__price
-						span= t.prices.from
-						p 900$
-			
-			
+						span= t.stack.items.testing.label
+						p= t.stack.items.testing.tech
+
+

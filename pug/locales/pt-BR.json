@@ -2,14 +2,14 @@
   "t": {
     "lang": "pt-BR",
     "langSwitchLabel": "Idioma",
-    "title": "Mumbrass - Agência, Corporativo, Estúdio e Landing Page",
-    "description": "Portfólio de desenvolvimento web. Crio sites, landing pages e lojas virtuais com código de qualidade.",
+    "title": "Kelvin Custódio — Desenvolvedor Full Stack | PHP, Laravel, Vue.js",
+    "description": "Portfólio de Kelvin Custódio, desenvolvedor full stack em Jericó/PB. Aplicações web com PHP, Laravel, Vue.js, TypeScript, MySQL e Docker.",
     "menu": {
       "home": "Início",
       "about": "Sobre",
       "services": "Serviços",
       "skills": "Habilidades",
-      "prices": "Preços",
+      "prices": "Stack",
       "portfolio": "Portfólio",
       "reviews": "Depoimentos",
       "clients": "Clientes",
@@ -23,103 +23,138 @@
       "otherHref": "en.html",
       "selfHref": "index.html"
     },
+    "social": {
+      "linkedin": "https://br.linkedin.com/in/kelvin-cust%C3%B3dio-672423b8",
+      "github": "https://github.com/KelvinCustodio11",
+      "whatsapp": "https://wa.me/5583999047246",
+      "email": "mailto:kelvin-custodio@hotmail.com"
+    },
     "sidebar": {
-      "hello": "OLÁ!",
-      "text": "Sou desenvolvedor web focado em criar experiências digitais rápidas, acessíveis e bem construídas.",
-      "copyright": "Mumbrass 2018. Todos os direitos reservados",
-      "by": "Design e desenvolvimento por"
+      "hello": "KELVIN CUSTÓDIO",
+      "text": "Desenvolvedor full stack em Jericó/PB. Construo aplicações web de ponta a ponta — do banco de dados à interface — com PHP, Laravel, Vue.js e Docker.",
+      "copyright": "© 2026 Kelvin Custódio. Todos os direitos reservados",
+      "by": "Desenvolvido por"
     },
     "footer": {
-      "copyright": "Mumbrass 2018"
+      "copyright": "Kelvin Custódio 2026"
     },
     "hero": {
-      "pretitle": "Olá",
-      "title1": "SOLUÇÕES INCRÍVEIS",
-      "title2": "PARA O SEU NEGÓCIO",
-      "cta1": "Iniciar um projeto",
-      "cta2": "Ver meus trabalhos"
+      "pretitle": "Olá, eu sou o Kelvin",
+      "title1": "DESENVOLVEDOR",
+      "title2": "DE SOFTWARE",
+      "title3": "FULL STACK",
+      "cta1": "Falar comigo",
+      "cta2": "Ver meus projetos"
     },
     "about": {
       "vertical": "Quem sou eu",
-      "experience": "6 Anos de Experiência",
+      "experience": "Atuando na área desde 2018",
       "title": "Sobre Mim",
-      "description": "Tenho muita experiência no desenvolvimento de landing pages, lojas virtuais, sites corporativos e páginas iniciais; experiência em construir negócios rentáveis junto com meus clientes. Conheço todos os detalhes que um site precisa ter e os elementos que impactam significativamente na conversão.",
-      "pretitle": "Meu código é sempre de alta qualidade, feito à mão",
-      "cta": "Torne-se meu cliente"
+      "description": "Sou desenvolvedor full stack e acompanho projetos desde a concepção até a manutenção e a evolução contínua. Tenho forte domínio em PHP, JavaScript, Laravel, Vue.js, Docker e MySQL, sempre aplicando boas práticas de arquitetura de software, testes automatizados e CI/CD.",
+      "pretitle": "PHP · Laravel · Vue.js · TypeScript · Docker",
+      "cta": "Entrar em contato"
     },
     "services": {
       "vertical": "O que eu faço",
       "pretitle": "Minhas Especializações",
-      "title": "Meus Melhores Serviços",
-      "description": "No meu trabalho eu uso diversas técnicas e ferramentas como: HTML5, CSS3, jQuery, Design Responsivo e o framework Bootstrap. Uso as tecnologias mais recentes e as últimas tendências do desenvolvimento web.",
-      "cta": "Iniciar um projeto",
+      "title": "O que eu desenvolvo",
+      "description": "Atuo em todas as camadas de uma aplicação web: API e regra de negócio em PHP e Laravel, interface em Vue.js e TypeScript, banco de dados em MySQL e infraestrutura com Docker, Nginx e pipelines de entrega contínua.",
+      "cta": "Falar sobre um projeto",
       "items": {
         "video": {
-          "title": "Editor de Vídeo",
-          "text": "Edição e produção de vídeos com cortes precisos, ritmo e acabamento profissional."
+          "title": "Desenvolvimento Back-end",
+          "text": "APIs e regra de negócio em PHP, com Laravel para aplicações completas e Slim para serviços enxutos."
         },
         "photo": {
-          "title": "Fotógrafo",
-          "text": "Ensaios fotográficos e tratamento de imagens para marcas e produtos."
+          "title": "Desenvolvimento Front-end",
+          "text": "Interfaces em Vue.js e TypeScript: responsivas, tipadas e com boa performance."
         },
         "designer": {
-          "title": "Designer",
-          "text": "Identidade visual, layouts e interfaces pensados para converter."
+          "title": "Integrações e APIs",
+          "text": "Conexão com sistemas e APIs de terceiros, autenticação OAuth e webhooks."
         },
         "manager": {
-          "title": "Gestor",
-          "text": "Planejamento e coordenação de projetos do início até a entrega."
+          "title": "Banco de Dados",
+          "text": "Modelagem de dados e otimização de consultas em MySQL."
         },
         "wordpress": {
-          "title": "WordPress",
-          "text": "Temas e plugins sob medida, com desempenho e facilidade de edição."
+          "title": "Testes Automatizados",
+          "text": "Cobertura de testes com phpUnit e Jest para evoluir o código sem medo de quebrar."
         },
         "css": {
-          "title": "CSS & HTML",
-          "text": "Marcação semântica e estilos responsivos escritos à mão."
+          "title": "Docker e CI/CD",
+          "text": "Ambientes reproduzíveis com Docker Compose, Nginx e pipelines de entrega contínua."
         },
         "opencart": {
-          "title": "OpenCart",
-          "text": "Lojas virtuais configuradas, personalizadas e prontas para vender."
+          "title": "Arquitetura de Software",
+          "text": "Projetos organizados e documentados, pensados para crescer sem virar dívida técnica."
         },
         "support": {
-          "title": "Suporte",
-          "text": "Manutenção, correções e melhorias contínuas depois da entrega."
+          "title": "Suporte e Evolução",
+          "text": "Manutenção, correção de bugs e melhoria contínua depois da entrega."
         }
       }
     },
     "skills": {
-      "vertical": "O que eu faço",
+      "vertical": "Minhas competências",
       "title": "Minhas Habilidades",
-      "description": "Fazer bem feito e no prazo é um princípio inabalável, mais importante do que qualquer valor em dinheiro.",
+      "description": "Prefiro soluções simples e testadas a atalhos que quebram em produção. Código que outros desenvolvedores conseguem ler, entender e manter.",
       "strong": "Conheça o meu portfólio e vamos trabalhar juntos!",
       "list": [
-        "Integração WordPress",
-        "PSD para HTML responsivo",
-        "Otimização para SEO",
-        "Design totalmente responsivo",
-        "Designs de páginas promocionais"
+        "Desenvolvimento de APIs REST",
+        "Aplicações com Laravel e Vue.js",
+        "Testes automatizados com phpUnit e Jest",
+        "Docker, Nginx e pipelines CI/CD",
+        "Integrações com sistemas de terceiros"
       ],
       "bars": {
-        "branding": "Logo / Identidade",
-        "coding": "Programação",
-        "wordpress": "WordPress",
-        "html": "HTML5 / CSS3"
+        "branding": "PHP / Laravel",
+        "coding": "JavaScript / TypeScript",
+        "wordpress": "Vue.js",
+        "html": "Docker / CI-CD"
       }
     },
-    "prices": {
-      "vertical": "Investimento",
-      "pretitle": "25$ meu valor por hora",
-      "title": "Preços",
-      "from": "A partir de",
+    "stack": {
+      "vertical": "Stack",
+      "pretitle": "Tecnologias do dia a dia",
+      "title": "Stack Tecnológica",
+      "from": "Tecnologia",
       "items": {
-        "promo": "Design de sites promocionais",
-        "corporate": "Design de sites corporativos",
-        "services": "Design de serviços web",
-        "ecommerce": "Design de e-commerce",
-        "sketch": "Rascunhos e fluxo do usuário",
-        "homepage": "Design de página inicial",
-        "inner": "Design de páginas internas"
+        "backend": {
+          "title": "APIs, regra de negócio e integrações",
+          "label": "Back-end",
+          "tech": "PHP"
+        },
+        "framework": {
+          "title": "Aplicações completas e administráveis",
+          "label": "Framework",
+          "tech": "Laravel"
+        },
+        "frontend": {
+          "title": "SPA e interfaces do usuário",
+          "label": "Front-end",
+          "tech": "Vue.js"
+        },
+        "language": {
+          "title": "Tipagem, qualidade e manutenibilidade",
+          "label": "Linguagem",
+          "tech": "TypeScript"
+        },
+        "database": {
+          "title": "Modelagem, consultas e performance",
+          "label": "Banco",
+          "tech": "MySQL"
+        },
+        "infra": {
+          "title": "Ambientes reproduzíveis e entrega contínua",
+          "label": "Infra",
+          "tech": "Docker"
+        },
+        "testing": {
+          "title": "Cobertura de testes e regressão",
+          "label": "Testes",
+          "tech": "phpUnit"
+        }
       }
     },
     "portfolio": {
@@ -171,12 +206,13 @@
     "contact": {
       "vertical": "Fale comigo",
       "title": "Diga Olá",
-      "phone": "Ligue a qualquer hora",
-      "phoneValue": "+55 11 99999-0000",
+      "phone": "WhatsApp",
+      "phoneValue": "+55 (83) 99904-7246",
       "email": "Envie um e-mail",
-      "emailValue": "contato@dominio.com",
-      "address": "Endereço",
-      "addressValue": "445 Rua Mount Eden, São Paulo",
+      "emailValue": "kelvin-custodio@hotmail.com",
+      "emailValue2": "kelvincustodio11@gmail.com",
+      "address": "Onde estou",
+      "addressValue": "Jericó, Paraíba — Brasil",
       "form": {
         "name": "Seu nome *",
         "email": "Seu e-mail *",

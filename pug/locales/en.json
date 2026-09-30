@@ -2,14 +2,14 @@
   "t": {
     "lang": "en",
     "langSwitchLabel": "Language",
-    "title": "Mumbrass - Agency, Corporate, Studio Landing Page",
-    "description": "Web development portfolio. I build websites, landing pages and online stores with quality code.",
+    "title": "Kelvin Custódio — Full Stack Developer | PHP, Laravel, Vue.js",
+    "description": "Kelvin Custódio's portfolio, full stack developer based in Jericó, Brazil. Web applications built with PHP, Laravel, Vue.js, TypeScript, MySQL and Docker.",
     "menu": {
       "home": "Home",
       "about": "About",
       "services": "Services",
       "skills": "Skills",
-      "prices": "Prices",
+      "prices": "Stack",
       "portfolio": "Portfolio",
       "reviews": "Reviews",
       "clients": "Clients",
@@ -23,103 +23,138 @@
       "otherHref": "index.html",
       "selfHref": "en.html"
     },
+    "social": {
+      "linkedin": "https://br.linkedin.com/in/kelvin-cust%C3%B3dio-672423b8",
+      "github": "https://github.com/KelvinCustodio11",
+      "whatsapp": "https://wa.me/5583999047246",
+      "email": "mailto:kelvin-custodio@hotmail.com"
+    },
     "sidebar": {
-      "hello": "HELLO THERE!",
-      "text": "I am a web developer focused on building fast, accessible and well-crafted digital experiences.",
-      "copyright": "Mumbrass 2018. All Rights Reserved",
-      "by": "Design and Development by"
+      "hello": "KELVIN CUSTÓDIO",
+      "text": "Full stack developer based in Jericó, Brazil. I build web applications end to end — from database to interface — using PHP, Laravel, Vue.js and Docker.",
+      "copyright": "© 2026 Kelvin Custódio. All Rights Reserved",
+      "by": "Built by"
     },
     "footer": {
-      "copyright": "Mumbrass 2018"
+      "copyright": "Kelvin Custódio 2026"
     },
     "hero": {
-      "pretitle": "Hello there",
-      "title1": "AWESOME SOLUTIONS",
-      "title2": "FOR YOUR BUSINESS",
-      "cta1": "Start a project",
-      "cta2": "See my works"
+      "pretitle": "Hi, I'm Kelvin",
+      "title1": "FULL STACK",
+      "title2": "SOFTWARE",
+      "title3": "DEVELOPER",
+      "cta1": "Get in touch",
+      "cta2": "See my work"
     },
     "about": {
       "vertical": "Who i'm",
-      "experience": "6 Years of Experience",
+      "experience": "Working in the field since 2018",
       "title": "About Me",
-      "description": "I have much experience in developing landing pages, online stores, corporate sites and home pages; experience in developing profitable business on the example of my clients. I know a lot of nuances that a web site must contain, and the elements which significantly affect the conversion.",
-      "pretitle": "My code is always High Quality, Hand-Coded",
-      "cta": "Become my client"
+      "description": "I'm a full stack developer and I follow projects from conception through maintenance and continuous evolution. I have strong command of PHP, JavaScript, Laravel, Vue.js, Docker and MySQL, always applying good software architecture practices, automated testing and CI/CD.",
+      "pretitle": "PHP · Laravel · Vue.js · TypeScript · Docker",
+      "cta": "Get in touch"
     },
     "services": {
       "vertical": "What i do",
       "pretitle": "My Specializations",
-      "title": "My Best Services",
-      "description": "In my work I use a variety of techniques and instruments like: HTML5, CSS3, jQuery, Responsive Design and the Bootstrap Framework. I'm using the latest technologies and the latest trends in web development.",
-      "cta": "Start a project",
+      "title": "What I build",
+      "description": "I work on every layer of a web application: APIs and business logic in PHP and Laravel, interface in Vue.js and TypeScript, database in MySQL and infrastructure with Docker, Nginx and continuous delivery pipelines.",
+      "cta": "Discuss a project",
       "items": {
         "video": {
-          "title": "Video Editor",
-          "text": "Video editing and production with precise cuts, rhythm and professional finish."
+          "title": "Back-end Development",
+          "text": "APIs and business logic in PHP, with Laravel for full applications and Slim for lean services."
         },
         "photo": {
-          "title": "Photographer",
-          "text": "Photo shoots and image retouching for brands and products."
+          "title": "Front-end Development",
+          "text": "Interfaces built with Vue.js and TypeScript: responsive, typed and fast."
         },
         "designer": {
-          "title": "Designer",
-          "text": "Visual identity, layouts and interfaces designed to convert."
+          "title": "Integrations & APIs",
+          "text": "Connecting third-party systems and APIs, OAuth authentication and webhooks."
         },
         "manager": {
-          "title": "Manager",
-          "text": "Project planning and coordination from start to delivery."
+          "title": "Database",
+          "text": "Data modelling and query optimization in MySQL."
         },
         "wordpress": {
-          "title": "WordPress",
-          "text": "Custom themes and plugins, with performance and easy editing."
+          "title": "Automated Testing",
+          "text": "Test coverage with phpUnit and Jest so the code can evolve without fear of breaking."
         },
         "css": {
-          "title": "CSS & HTML",
-          "text": "Semantic markup and responsive styles written by hand."
+          "title": "Docker & CI/CD",
+          "text": "Reproducible environments with Docker Compose, Nginx and continuous delivery pipelines."
         },
         "opencart": {
-          "title": "OpenCart",
-          "text": "Online stores configured, customized and ready to sell."
+          "title": "Software Architecture",
+          "text": "Organized, documented projects designed to grow without turning into technical debt."
         },
         "support": {
-          "title": "Support",
-          "text": "Maintenance, fixes and continuous improvements after delivery."
+          "title": "Support & Evolution",
+          "text": "Maintenance, bug fixing and continuous improvement after delivery."
         }
       }
     },
     "skills": {
-      "vertical": "What i do",
+      "vertical": "What i'm good at",
       "title": "My Skills",
-      "description": "I do my job well and on time - that is an unshakable principle, more important than any amount of money.",
+      "description": "I'd rather ship simple, tested solutions than shortcuts that break in production. Code that other developers can read, understand and maintain.",
       "strong": "Just check my portfolio and let's work together!",
       "list": [
-        "WordPress Integration",
-        "PSD to Responsive HTML",
-        "SEO Optimization",
-        "Fully Responsive Design",
-        "Promo Pages Designs"
+        "REST API development",
+        "Applications with Laravel and Vue.js",
+        "Automated testing with phpUnit and Jest",
+        "Docker, Nginx and CI/CD pipelines",
+        "Third-party system integrations"
       ],
       "bars": {
-        "branding": "Logo / Branding",
-        "coding": "Coding",
-        "wordpress": "WordPress",
-        "html": "HTML5 / CSS3"
+        "branding": "PHP / Laravel",
+        "coding": "JavaScript / TypeScript",
+        "wordpress": "Vue.js",
+        "html": "Docker / CI-CD"
       }
     },
-    "prices": {
-      "vertical": "Investment",
-      "pretitle": "25$ my hourly rate",
-      "title": "Prices",
-      "from": "From",
+    "stack": {
+      "vertical": "Stack",
+      "pretitle": "Everyday technologies",
+      "title": "Tech Stack",
+      "from": "Technology",
       "items": {
-        "promo": "Promo Websites Design",
-        "corporate": "Corporate Websites Design",
-        "services": "Web Services Design",
-        "ecommerce": "E-commerce Design",
-        "sketch": "Sketching & User Flow",
-        "homepage": "Homepage Design",
-        "inner": "Inner Page Design"
+        "backend": {
+          "title": "APIs, business logic and integrations",
+          "label": "Back-end",
+          "tech": "PHP"
+        },
+        "framework": {
+          "title": "Full, admin-friendly applications",
+          "label": "Framework",
+          "tech": "Laravel"
+        },
+        "frontend": {
+          "title": "SPAs and user interfaces",
+          "label": "Front-end",
+          "tech": "Vue.js"
+        },
+        "language": {
+          "title": "Typing, quality and maintainability",
+          "label": "Language",
+          "tech": "TypeScript"
+        },
+        "database": {
+          "title": "Modelling, queries and performance",
+          "label": "Database",
+          "tech": "MySQL"
+        },
+        "infra": {
+          "title": "Reproducible environments and delivery",
+          "label": "Infra",
+          "tech": "Docker"
+        },
+        "testing": {
+          "title": "Test coverage and regression",
+          "label": "Testing",
+          "tech": "phpUnit"
+        }
       }
     },
     "portfolio": {
@@ -171,12 +206,13 @@
     "contact": {
       "vertical": "Contact with me",
       "title": "Say Hello",
-      "phone": "Call Me Anytime",
-      "phoneValue": "+754-554-54-34",
+      "phone": "WhatsApp",
+      "phoneValue": "+55 (83) 99904-7246",
       "email": "Email me",
-      "emailValue": "Office@domain.com",
-      "address": "Address",
-      "addressValue": "445 Mount Eden Road, Mount",
+      "emailValue": "kelvin-custodio@hotmail.com",
+      "emailValue2": "kelvincustodio11@gmail.com",
+      "address": "Where I am",
+      "addressValue": "Jericó, Paraíba — Brazil",
       "form": {
         "name": "Your Name *",
         "email": "Your Email *",

@@ -225,6 +225,23 @@
 	background-position: 50% 50%
 	background-repeat: no-repeat
 
+// Overlay escuro sobre a foto da primeira tela (hero).
+// isolation: isolate torna a secao um contexto de empilhamento proprio,
+// assim o ::before fica entre a background-image e o conteudo sem
+// interferir no z-index que o pagePiling escreve inline.
+.alx-hero
+	isolation: isolate
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0, 0, 0, 0.45)
+		z-index: -1
+		pointer-events: none
+
 .alx-text-right
 	text-align: right
 	justify-content: flex-end
